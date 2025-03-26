@@ -39,10 +39,9 @@
       - [2.2.3 John Marlow - 35 years old](#223-john-marlow---35-years-old)
     - [2.3 Use Cases List](#23-use-cases-list)
     - [2.4 Use Case Descriptions](#24-use-case-descriptions)
-      - [2.4.1 Navigation and Mobility](#241-navigation-and-mobility)
-      - [2.4.2 Medication Reminders](#242-medication-reminders)
-      - [2.4.3 Conversation Transcription](#243-conversation-transcription)
-      - [2.4.4 Battery Management](#244-battery-management)
+      - [2.4.1 Real-Time Transcription](#241-real-time-transcription)
+      - [2.4.2 Speaker Identification](#242-speaker-identification)
+      - [2.4.3 Accessibility Optimization](#243-accessibility-optimization)
   - [3. UI/UX](#3-uiux)
     - [3.1 Inspiration](#31-inspiration)
     - [3.2 Design Principles](#32-design-principles)
@@ -57,10 +56,13 @@
     - [5.2 Performance](#52-performance)
     - [5.3 Maintainability](#53-maintainability)
   - [6. Future Improvements](#6-future-improvements)
-    - [6.1 Emergency Assistance](#61-emergency-assistance)
-    - [6.2 Automatic Medication Management](#62-automatic-medication-management)
-    - [6.3 Mobile App Integration](#63-mobile-app-integration)
-    - [6.4 AI Assistance for Alzheimer's (Abandonned)](#64-ai-assistance-for-alzheimers-abandonned)
+    - [6.1 Enhanced Voice Recognition](#61-enhanced-voice-recognition)
+    - [6.2 Portable Power Option](#62-portable-power-option)
+    - [6.3 Wireless Connectivity](#63-wireless-connectivity)
+    - [6.4 Touchscreen Display](#64-touchscreen-display)
+    - [6.5 Customizable Accessibility Features](#65-customizable-accessibility-features)
+    - [6.6 Integration with Smart Home Systems](#66-integration-with-smart-home-systems)
+    - [6.7 Data Logging and Analytics](#67-data-logging-and-analytics)
   - [7. End Matter](#7-end-matter)
     - [7.1 Naming Inspiration](#71-naming-inspiration)
     - [7.2 License](#72-license)
@@ -72,43 +74,36 @@
 
 ## Preamble
 
-*This document outlines the functional specifications for PAM Assist Mindful (PAM), a robotic assistant designed to aid the elderly in various aspects of their daily lives. PAM aims to provide comprehensive, round-the-clock support, addressing the limitations of existing solutions.*
+*This document outlines the functional specifications for PAM Assist Mindful (PAM), a single-device robotic assistant designed to transcribe conversations in real-time for elderly users. PAM aims to enhance communication and accessibility through its omnidirectional microphone and integrated display.*
 
 ## 1. Introduction
 
 ### 1.1 Project Overview
 
-PAM Assist Mindful (PAM) is an innovative robotic assistant specifically designed to enhance the quality of life for the elderly. By leveraging advanced technology, PAM provides comprehensive, round-the-clock support, addressing the limitations of existing solutions. The project aims to create a reliable companion that not only assists with daily tasks but also ensures safety and well-being. PAM's features include seamless navigation, timely medication reminders, and accurate conversation transcription, making it an indispensable tool for elderly care. The ultimate goal is to foster independence and peace of mind for both the elderly and their caregivers.
+PAM Assist Mindful (PAM) is a compact, user-friendly device designed to improve communication for elderly individuals. Equipped with an omnidirectional microphone and a high-resolution display, PAM transcribes conversations in real-time, enabling users with hearing impairments to follow discussions effortlessly. The device is intended to foster inclusivity, independence, and accessibility in daily interactions.
 
 ### 1.2 Project Definition
 
 #### 1.2.1 Vision
 
-The vision of this project is to develop a robotic assistant that can provide personalized, reliable, and compassionate care for the elderly.
+The vision of this project is to create a reliable and accessible device that bridges communication gaps for elderly individuals with hearing impairments.
 
 Objectives include:
 
-- Enhancing the quality of life for the elderly by providing comprehensive support.
-- Promoting independence and well-being through advanced technology.
-- Creating a reliable companion that can navigate spaces, manage medication, and facilitate communication.
-- Fostering peace of mind for both the elderly and their caregivers.
-- Enabling the elderly to live comfortably and securely in their own homes.
-- Supporting caregivers by providing an extra layer of assistance and monitoring.
-- Embracing the principles of inclusivity, accessibility, and dignity in elderly care.
-- Continuously improving and evolving to meet the changing needs of the elderly population.
-- Collaborating with healthcare professionals, researchers, and experts to optimize PAM's functionality and impact.
-- Ensuring that PAM is user-friendly, intuitive, and adaptable to individual preferences and requirements.
-- Embracing ethical considerations, data privacy, and security measures to protect user information and maintain confidentiality.
+- Providing real-time conversation transcription to enhance communication.
+- Ensuring the device is intuitive and easy to use for elderly users.
+- Promoting inclusivity and accessibility in social interactions.
+- Maintaining a compact and aesthetically pleasing design.
+- Leveraging advanced voice recognition technology for accuracy.
 
 #### 1.2.2 Scope
 
-This project will use the following technologies and methodologies:
+This project will focus on the following technologies and methodologies:
 
-- Robotics: PAM will be a physical robot capable of autonomous navigation and interaction.
-- Artificial Intelligence: PAM will leverage AI for speech recognition, object detection, and decision-making.
-- Human-Centered Design: PAM will be designed with a focus on user experience, accessibility, and inclusivity.
-- Continuous Improvement: PAM will evolve over time based on user feedback, technological advancements, and emerging needs.
-- Collaboration: The project will involve professionals and partners to ensure a holistic and impactful solution.
+- **Voice Recognition**: Real-time transcription of conversations using an omnidirectional microphone.
+- **Display Technology**: High-resolution screen for clear and readable text output.
+- **Human-Centered Design**: Prioritizing usability and accessibility for elderly users.
+- **Standalone Device**: Self-contained hardware requiring minimal setup.
 
 #### 1.2.3 Deliverables
 
@@ -177,142 +172,125 @@ The project will be developed on 22 months, from 27 November 2024 to 29 May 2026
 
 The target audience for this project includes:
 
-- **Elderly Individuals**: Those who require assistance with daily tasks and activities, aiming to enhance their quality of life, promote independence, and ensure safety and well-being.
-- **Caregivers**: Family members, healthcare professionals, and other caregivers who seek reliable support in monitoring and assisting the elderly, thereby reducing their workload and providing peace of mind.
-- **Healthcare Providers**: Medical professionals and institutions interested in integrating advanced robotic assistance into elderly care to improve patient outcomes and streamline care processes.
-
-This diverse audience ensures that PAM is developed with a comprehensive understanding of the needs and challenges faced by the elderly and their support systems.
+- **Elderly Individuals**: Those with hearing impairments who require assistance in following conversations.
+- **Caregivers**: Family members and healthcare professionals seeking tools to improve communication with elderly individuals.
+- **Healthcare Providers**: Institutions interested in integrating assistive technologies into elderly care.
 
 ### 2.2 User Personas
 
 #### 2.2.1 Enzo Williams - 78 years old
 
-<img alt="AI generate reprensentation of Enzo Williams, 78 years old" src="images/personas-1.png" width="200" height="200px" style="margin-right: 20px;">
+<img alt="AI generate reprensentation of Enzo Williams, 78 years old" src="./images/persona-1.png" width="200" height="200px" style="margin-right: 20px;">
 
 **Background:**
 
-Enzo is a 78-year-old retired teacher who lives alone in a suburban home. He enjoys reading, gardening, and spending time with his grandchildren. Enzo has mild arthritis and hearing loss, which sometimes makes it challenging for him to move around and communicate effectively.
+Enzo is a 78-year-old retired teacher who lives alone in a suburban home. He has moderate hearing loss, which makes it difficult for him to follow conversations, especially in group settings.
 
 **Goals:**
 
-- Maintain independence and autonomy in daily activities.
-- Manage his medication schedule and health needs.
-- Stay connected with family and friends through conversations and social interactions.
+- Follow conversations without needing others to raise their voices.
+- Maintain independence in social interactions.
+- Stay connected with family and friends.
 
 **Frustrations:**
 
-- Forgetting to take his medication on time.
-- Struggling to hear and participate in conversations.
-- Feeling isolated and lonely due to limited social interactions.
+- Difficulty understanding conversations in noisy environments.
+- Feeling excluded during group discussions.
+- Struggling to adapt to complex technology.
 
 #### 2.2.2 Sarah Chen - 45 years old
 
-<img alt="AI generate reprensentation of Sarah Chen, 45 years old" src="images/personas-2.png" width="200" height="200px" style="margin-right: 20px;">
+<img alt="AI generate reprensentation of Sarah Chen, 45 years old" src="images/persona-2.png" width="200" height="200px" style="margin-right: 20px;">
 
 **Background:**
 
-Sarah is a 45-year-old working professional who lives with her husband and two children. She works full-time as a nurse and is responsible for caring for her elderly mother, who has mobility issues and requires assistance with daily tasks. Sarah's busy schedule and caregiving responsibilities often leave her feeling overwhelmed and exhausted.
+Sarah is a 45-year-old nurse who cares for her elderly mother with hearing impairments. She is looking for a solution to help her mother stay engaged in conversations without requiring constant assistance.
 
 **Goals:**
 
-- Ensure her mother's safety and well-being at all times.
-- Monitor her mother's medication intake and health status.
-- Balance work, family, and caregiving responsibilities effectively.
+- Provide her mother with a tool to follow conversations independently.
+- Reduce the need for repeated explanations during discussions.
+- Balance caregiving responsibilities with her professional life.
 
 **Frustrations:**
 
-- Juggling multiple roles and responsibilities.
-- Feeling anxious about her mother's health and safety.
-- Struggling to find time for self-care and relaxation.
+- Limited availability of simple, effective assistive devices.
+- Concerns about her mother feeling isolated due to hearing loss.
+- Difficulty finding time to research and set up new technologies.
 
 #### 2.2.3 John Marlow - 35 years old
 
-<img alt="AI generate reprensentation of John Marlow, 35 years old" src="images/personas-3.png" width="200" height="200px" style="margin-right: 20px;">
+<img alt="AI generate reprensentation of John Marlow, 35 years old" src="images/persona-3.png" width="200" height="200px" style="margin-right: 20px;">
 
 **Background:**
 
-John is a 35-year-old healthcare professional working for a healthcare provider. He specializes in geriatric care and is passionate about improving the quality of life for elderly patients. John is responsible for overseeing the integration of advanced technologies into patient care, ensuring that new solutions are both effective and user-friendly. He is dedicated to staying updated with the latest advancements in healthcare technology and is always looking for innovative ways to enhance patient outcomes.
+John is a 35-year-old healthcare professional specializing in geriatric care. He is responsible for evaluating and recommending assistive technologies for elderly patients.
 
 **Goals:**
 
-- Implement advanced robotic assistance to improve elderly care.
-- Ensure that new technologies are user-friendly and accessible for elderly patients.
-- Enhance patient outcomes through the integration of innovative solutions.
+- Identify reliable and user-friendly devices for elderly care.
+- Ensure that assistive technologies are accessible and easy to adopt.
+- Improve communication between patients and caregivers.
 
 **Frustrations:**
 
-- Difficulty in finding reliable and effective technological solutions for elderly care.
-- Ensuring that elderly patients can easily adapt to and use new technologies.
-- Balancing the demands of his job with the need to stay updated on the latest advancements in healthcare technology.
+- Lack of affordable, high-quality solutions for hearing impairments.
+- Ensuring elderly patients can adapt to new devices.
+- Balancing the demands of his role with staying updated on advancements.
 
 ---
 
 ### 2.3 Use Cases List
 
-| Use Case ID | Use Case Name              | Description                                                                   |
-| ----------- | -------------------------- | ----------------------------------------------------------------------------- |
-| UC-01       | Navigation and Mobility    | PAM will navigate available spaces without colliding with obstacles.          |
-| UC-02       | Medication Reminders       | PAM will remind individuals to take their medication.                         |
-| UC-03       | Conversation Transcription | PAM will provide written transcriptions of oral conversations.                |
-| UC-04       | Battery Management         | PAM will monitor and manage its battery usage to ensure continuous operation. |
+| Use Case ID | Use Case Name              | Description                                                                      |
+| ----------- | -------------------------- | -------------------------------------------------------------------------------- |
+| UC-01       | Real-Time Transcription    | PAM will transcribe conversations in real-time for the user.                     |
+| UC-02       | Speaker Identification     | PAM will differentiate speakers and color-code their text.                       |
+| UC-03       | Accessibility Optimization | PAM will ensure text is displayed in a clear, readable format for elderly users. |
 
 ---
 
 ### 2.4 Use Case Descriptions
 
-#### 2.4.1 Navigation and Mobility
+#### 2.4.1 Real-Time Transcription
 
-| Field         | Description                                                                                                                                                                                                         |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Use Case ID   | UC-01                                                                                                                                                                                                               |
-| Use Case Name | Navigation and Mobility                                                                                                                                                                                             |
-| Actors        | PAM, Environment                                                                                                                                                                                                    |
-| Description   | PAM will navigate available spaces without colliding with obstacles.                                                                                                                                                |
-| Precondition  | PAM is powered on and operational.                                                                                                                                                                                  |
-| Postcondition | PAM reaches the desired destination without colliding with obstacles.                                                                                                                                               |
-| Main Flow     | 1. PAM receives a navigation command. <br> 2. PAM identifies the target location. <br> 3. PAM moves towards the target location. <br> 4. PAM avoids obstacles in its path. <br> 5. PAM reaches the target location. |
-
----
-
-#### 2.4.2 Medication Reminders
-
-| Field         | Description                                                                                                                                                                                                                                              |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Use Case ID   | UC-02                                                                                                                                                                                                                                                    |
-| Use Case Name | Medication Reminders                                                                                                                                                                                                                                     |
-| Actors        | PAM, User                                                                                                                                                                                                                                                |
-| Description   | PAM will remind individuals to take their medication.                                                                                                                                                                                                    |
-| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                       |
-| Postcondition | PAM provides a medication reminder to the user.                                                                                                                                                                                                          |
-| Main Flow     | 1. PAM checks the current time. <br> 2. PAM alerts the user to take their medication. <br> 3. PAM confirms the medication has been taken. <br> 4. PAM logs the medication intake. <br> 5. At the end of each week PAM ask the user to refill the pillbox |
+| Field         | Description                                                                                                                                                                                                                                                                 |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case ID   | UC-01                                                                                                                                                                                                                                                                       |
+| Use Case Name | Real-Time Transcription                                                                                                                                                                                                                                                     |
+| Actors        | PAM, User                                                                                                                                                                                                                                                                   |
+| Description   | PAM will transcribe conversations in real-time, displaying the text on its screen.                                                                                                                                                                                          |
+| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                                          |
+| Postcondition | PAM provides an accurate transcription of the conversation.                                                                                                                                                                                                                 |
+| Main Flow     | 1. PAM captures audio using its omnidirectional microphone. <br> 2. PAM processes the audio data to generate text. <br> 3. PAM displays the transcribed text on its screen in real-time. <br> 4. PAM continuously updates the transcription as the conversation progresses. |
 
 ---
 
-#### 2.4.3 Conversation Transcription
+#### 2.4.2 Speaker Identification
 
-| Field         | Description                                                                                                                                                                                                                                                        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Use Case ID   | UC-03                                                                                                                                                                                                                                                              |
-| Use Case Name | Conversation Transcription                                                                                                                                                                                                                                         |
-| Actors        | PAM, User                                                                                                                                                                                                                                                          |
-| Description   | PAM will provide written transcriptions of oral conversations.                                                                                                                                                                                                     |
-| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                                 |
-| Postcondition | PAM transcribes the conversation accurately.                                                                                                                                                                                                                       |
-| Main Flow     | 1. PAM listens to the conversation. <br> 2. PAM transcribes the conversation in real-time. <br> 3. PAM displays the transcription on its screen. <br> 4. PAM identifies different speakers. <br> 5. PAM changes the color of the text to indicate who is speaking. |
+| Field         | Description                                                                                                                                                                                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case ID   | UC-02                                                                                                                                                                                                                                                      |
+| Use Case Name | Speaker Identification                                                                                                                                                                                                                                     |
+| Actors        | PAM, Multiple Users                                                                                                                                                                                                                                        |
+| Description   | PAM will identify different speakers in a conversation and color-code their text for clarity.                                                                                                                                                              |
+| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                         |
+| Postcondition | PAM displays transcriptions with color-coded text to indicate different speakers.                                                                                                                                                                          |
+| Main Flow     | 1. PAM detects audio input from multiple speakers. <br> 2. PAM analyzes voice patterns to differentiate speakers. <br> 3. PAM assigns a unique color to each speaker. <br> 4. PAM displays the transcribed text with the assigned colors for each speaker. |
 
 ---
 
-#### 2.4.4 Battery Management
+#### 2.4.3 Accessibility Optimization
 
-| Field         | Description                                                                                                                                                                                                                                                     |
-| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Use Case ID   | UC-04                                                                                                                                                                                                                                                           |
-| Use Case Name | Battery Management                                                                                                                                                                                                                                              |
-| Actors        | PAM, Environment                                                                                                                                                                                                                                                |
-| Description   | PAM will monitor and manage its battery usage to ensure continuous operation.                                                                                                                                                                                   |
-| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                              |
-| Postcondition | PAM maintains sufficient battery charge for continuous operation.                                                                                                                                                                                               |
-| Main Flow     | 1. PAM monitors its battery level. <br> 2. PAM estimates the remaining battery life. <br> 3. PAM alerts the user when the battery is low (20%). <br> 4. PAM returns to the charging station to recharge. <br> 5. PAM resumes normal operation after recharging. |
+| Field         | Description                                                                                                                                                                                                                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use Case ID   | UC-03                                                                                                                                                                                                                                                                                                 |
+| Use Case Name | Accessibility Optimization                                                                                                                                                                                                                                                                            |
+| Actors        | PAM, User                                                                                                                                                                                                                                                                                             |
+| Description   | PAM will ensure that the transcribed text is displayed in a format optimized for elderly users, considering readability and accessibility.                                                                                                                                                            |
+| Precondition  | PAM is powered on and operational.                                                                                                                                                                                                                                                                    |
+| Postcondition | PAM displays text in a clear, accessible format.                                                                                                                                                                                                                                                      |
+| Main Flow     | 1. PAM initializes the display with accessibility settings (e.g., font size, contrast). <br> 2. PAM adjusts text formatting based on user preferences. <br> 3. PAM ensures that the text remains legible under various lighting conditions. <br> 4. PAM allows users to customize settings if needed. |
 
 ---
 
@@ -320,7 +298,7 @@ John is a 35-year-old healthcare professional working for a healthcare provider.
 
 ### 3.1 Inspiration
 
-<!-- TODO: Define clear exemple of the inspiration of the robot -->
+<!-- TODO: Define clear exemple of the inspiration of the device -->
 
 ### 3.2 Design Principles
 
@@ -354,9 +332,9 @@ John is a 35-year-old healthcare professional working for a healthcare provider.
 
 - **Functionality**: PAM will provide written transcriptions of oral conversations.
 - **Details**:
-  - Aid individuals with significant hearing loss.
-  - Enable following conversations without the need for raised voices.
-  - Identify different speakers and change the color of the text to indicate who is speaking.
+  - Omnidirectional microphone to capture audio from all directions.
+  - High-resolution display for clear text output.
+  - Speaker identification with color-coded text for different participants.
 
 ### 4.4 Battery Management
 
@@ -402,37 +380,61 @@ John is a 35-year-old healthcare professional working for a healthcare provider.
 
 ## 6. Future Improvements
 
-### 6.1 Emergency Assistance
+### 6.1 Enhanced Voice Recognition
 
-- **Description**: PAM will call for help or contact a loved one using voice commands.
+- **Description**: Improve the accuracy and adaptability of the voice recognition system.
 - **Details**:
-  - Dial emergency numbers or pre-registered contacts as needed.
-  - Send location information to emergency services or contacts.
-  - Provide real-time updates on the situation.
+  - Implement advanced noise-cancellation algorithms to handle noisy environments.
+  - Support multiple languages and regional accents for broader accessibility.
+  - Enable customization of voice recognition sensitivity based on user preferences.
 
-### 6.2 Automatic Medication Management
+### 6.2 Portable Power Option
 
-- **Description**: Integration of automatic medication management.
+- **Description**: Add a battery-powered option to make PAM portable.
 - **Details**:
-  - Automatic dispensing of medication based on schedule.
-  - Alerts for missed doses or incorrect medication.
-  - Integration with healthcare providers for monitoring and adjustments.
+  - Integrate a rechargeable battery with sufficient capacity for extended use.
+  - Provide battery status indicators on the display.
+  - Ensure seamless switching between battery and direct power modes.
 
-### 6.3 Mobile App Integration
+### 6.3 Wireless Connectivity
 
-- **Description**: Companion mobile app for remote monitoring and control.
+- **Description**: Enable wireless connectivity for remote monitoring and updates.
 - **Details**:
-  - View PAM's status, battery level, and location.
-  - Receive notifications and alerts on medication reminders.
-  - Communicate with PAM remotely through voice commands.
-  - Access real-time conversation transcriptions and logs.
+  - Add Wi-Fi or Bluetooth modules for communication with external devices.
+  - Allow remote updates to software and firmware.
+  - Enable users to access transcriptions and settings via a companion mobile app.
 
-### 6.4 AI Assistance for Alzheimer's (Abandonned)
+### 6.4 Touchscreen Display
 
-***Abandon Reason:*** Enzo's moonshot has changed to another project and this feature is no longer being pursued due to the huge developement and training time of this kind of AI Assistance.
+- **Description**: Upgrade to a touchscreen display for enhanced interactivity.
+- **Details**:
+  - Allow users to interact directly with the display for customization and navigation.
+  - Provide options to adjust font size, color, and contrast through touch controls.
+  - Include a simple, intuitive interface tailored for elderly users.
 
-- **Description**: AI assistance for individuals with Alzheimer's (Enzo's moonshot).
-- **Details**: This feature would have been integrated into PAM to provide additional support for individuals with Alzheimer's, creating an artificial memory capable of remebering people, environment and information about daily life.
+### 6.5 Customizable Accessibility Features
+
+- **Description**: Expand accessibility options to meet diverse user needs.
+- **Details**:
+  - Add support for visual impairments, such as text-to-speech for transcriptions.
+  - Include adjustable font sizes, high-contrast modes, and colorblind-friendly palettes.
+  - Allow users to save and load personalized accessibility profiles.
+
+### 6.6 Integration with Smart Home Systems
+
+- **Description**: Enable PAM to integrate with existing smart home ecosystems.
+- **Details**:
+  - Provide compatibility with popular smart home platforms (e.g., Alexa, Google Home).
+  - Allow PAM to act as a hub for managing smart devices.
+  - Enable voice commands to control smart home features, such as lighting and temperature.
+
+### 6.7 Data Logging and Analytics
+
+- **Description**: Add features for logging and analyzing conversation data.
+- **Details**:
+  - Allow users to save transcriptions for future reference.
+  - Provide analytics on conversation patterns, such as speaker activity and duration.
+  - Ensure all data is stored securely and complies with privacy regulations.
 
 ---
 
