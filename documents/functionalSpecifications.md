@@ -44,6 +44,7 @@
       - [2.4.3 Accessibility Optimization](#243-accessibility-optimization)
   - [3. UI/UX](#3-uiux)
     - [3.1 Inspiration](#31-inspiration)
+      - [Alexa Text to Speech](#alexa-text-to-speech)
     - [3.2 Design Principles](#32-design-principles)
     - [3.3 Logo](#33-logo)
   - [4. Functional Requirements](#4-functional-requirements)
@@ -298,7 +299,13 @@ John is a 35-year-old healthcare professional specializing in geriatric care. He
 
 ### 3.1 Inspiration
 
-<!-- TODO: Define clear exemple of the inspiration of the device -->
+The design of PAM is inspired by the Alexa Text to Speech device by amazon. The device's user-friendly interface and clear communication methods serve as a model for PAM's design. The goal is to create an intuitive and accessible experience for elderly users, similar to the Alexa device but on the opposite instead of converting text to speech, PAM will convert speech to text.
+
+#### Alexa Text to Speech
+
+![Alexa Text to Speech](./images/inspiration-1.png)
+
+
 
 ### 3.2 Design Principles
 
